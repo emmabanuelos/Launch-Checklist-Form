@@ -13,12 +13,12 @@ window.addEventListener("load", function() {
       let pilotStatusName = document.getElementById("pilotstatus")
       let copilotStatusName = document.getElementById("copilotStatus")
       
-      let inputReady = true;
+      let inputReady = true; //each tim that the page refreshes, it goes back to true
 
 
       if (pilotNameInput.value === "" || pilotNameInput.value === "" || fuelLevel.value === "" || cargoMass.value === "" ) {
          alert("All fields are required!");
-         inputReady = false
+         inputReady = false //pull input ready in the tests make sure the input is false 
          
       }
    });
